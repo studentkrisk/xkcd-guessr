@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div id="container">
+  		<div style="display: contents">%sveltekit.body%</div>
+  	</div>
+		<style>
+  		body {
+  		  background-color: #96a8c8;
+  		}
+    	
+    	#container {
+    	  background-color: white;
+    	  
+    	  width: 50vw;
+    	  
+    	  display: flex;
+    	  align-items: center;
+    	  flex-direction: column;
+    	  gap: 0;
+    	  
+    	  margin: auto;
+    	  border: 1px solid black;
+    	  border-radius: 10px;
+    	  padding: 10px;
+    	}
+    	
+    	#container * {
+    	  max-width: 100%;
+        font-family: "xkcd-script";
+    	}
+    	
+    	button {
+        background-color: #6e7b91;
+        color: white;
+        display: inline-block;
+        
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        border: 1px solid black;
+        border-radius: 5px;
+        
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: white;
+        color: #6e7b91;
+      }
+      
+      @font-face {
+        font-family: "xkcd-script";
+        font-style: normal;
+        font-weight: 500;
+        src: url("/xkcd-script.ttf")
+      }
+		</style>
+	</body>
+</html>
