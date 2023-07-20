@@ -2,7 +2,7 @@
   <h1>XKCDGuessr</h1>
   <span>
     <button on:click={reset}>play number</button>
-    <button on:click={reset}>play date</button>
+    <button on:click={reset} disabled>play date (unimplemented)</button>
   </span>
 {:else}
   <h1 style="">{comic.safe_title}</h1>
@@ -13,7 +13,7 @@
   </div>
   <img src = {comic.img} alt={comic.transcript}>
   <button style = "margin: 10px;" on:click={reset}>guess {guess}</button>
-  <p id = "score">score: {num_rounds > 0 ? Math.round(score/num_rounds) : 0}</p>
+  <p id = "score">score: {num_rounds > 0 ? Math.round(score/num_rounds) : 0} / 100</p>
 {/if}
 
 <style>
